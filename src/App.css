@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body{
+    background-color: coral;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
   }
-}
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  h1{
+    margin: 0px 0px 20px;
+  }
+  
+  .Login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Login input{
+    font-size: 1.2em;
+    height: 30px;
+    width: 90vw;
+  }
+  .Login button{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 20vw;
+    margin: 20px auto;
+
+  }
+  .errorMessage{
+    color: red;
+    font-weight: 600;
+  }
+  
+  .ProfilePage{
+    font-size: 1.2em;
+    border: 2px solid;
+    background: #be577b;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+  }
+  .ProfilePage h1{
+    color: white;
+  }
+  .ProfilePage table{
+    width: 30vw;
+    margin: 10px auto;
+  }
+  .ProfilePage img{
+    border: 1px solid black;
+    box-shadow: 35px -4px 5px black;
+    border-radius: 50%;
+  }
+  .ProfilePage table{
+    border-collapse: collapse;
+  }
+  .ProfilePage table tr, td{
+    border: 2px solid purple;
+  }
+  td:first-child{
+    background-color: rgb(79, 7, 74);
+    color: white;
+  }
+  td:last-child{
+    background-color: #e2dede;
+    color: black;
+  }
